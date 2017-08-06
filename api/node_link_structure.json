@@ -1,0 +1,28 @@
+{
+  "root":{
+      "children":{
+          "dir1":{
+              "children":{
+                  "dir11":{
+                    "children":{
+                        "dir111"
+                    }
+                  },
+                  "link11" : "www.google.com"
+              }
+          },
+          "dir2":{
+            "children":{
+              "dir21":{
+                  "children":{
+                    "211"
+                  }
+              },
+              "link21":"www.safari.com",
+              "link22":"www.facebook.com",
+              "link23":"www.twitter.com"
+            }
+         }
+      }
+   }
+}

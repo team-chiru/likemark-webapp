@@ -2,7 +2,7 @@
   "name": "quasar-app",
   "version": "0.0.1",
   "description": "Likemark webapp",
-  "author": "Your Name",
+  "author": "Team-Chiru",
   "scripts": {
     "clean": "node build/script.clean.js",
     "dev": "node build/script.dev.js",
