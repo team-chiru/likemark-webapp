@@ -26,33 +26,12 @@
       "<router-view class="layout-view">" component
       if using subRoutes
     -->
+
       <div class="layout-view">
         <h4 class="caption">Likemark List</h4>
-        <div class="list item-inset-delimiter">
-          <div class="item">
-            <i class="item-primary">folder</i>
-            <div class="item-content">Folder 1</div>
-          </div>
-          <div class="item">
-            <i class="item-primary">folder</i>
-            <div class="item-content">Folder2</div>
-          </div>
-          <div class="item">
-            <i class="item-primary">folder</i>
-            <div class="item-content">Folder3</div>
-          </div>
-          <div class="item">
-            <i class="item-primary">link</i>
-            <div class="item-content"><a href="https://team-chiru.github.io/likemark/">likemark.io</a></div>
-          </div>
-          <div class="item">
-            <i class="item-primary">link</i>
-            <div class="item-content"><a href="https://www.google.com">https://www.google.com</a></div>
-          </div>
-          <folder></folder>
-          <lien></lien>
+          <root></root> 
         </div> <!-- fin list -->
-      </div>
+    </div>
 
 
   </q-layout>
@@ -60,13 +39,11 @@
 
 <script>
 // import { Utils, Platform } from 'quasar'
-import Folder from './explorer/Folder.vue'
-import Link from './explorer/Link.vue'
+import Root from './explorer/root.vue'
 
 export default{
   components: {
-    'folder': Folder,
-    'lien': Link
+    'root': Root
   }
 }
 </script>
