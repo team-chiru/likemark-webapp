@@ -1,7 +1,7 @@
 <template>
     <div class="list item-inset-delimiter" >
-      <div v-for="n in 5">
-        <folder></folder>
+      <div v-for="folder in folders">
+        <folder :title="folder.title"></folder>
       </div>
       <div v-for="n in 5">
         <lien></lien>
@@ -23,15 +23,19 @@ export default{
       'lien': Link
     }
   },
-  data: {
-    folders: [
-      { folder: { title: 'Folder 1' } },
-      { folder: { title: 'Folder 2' } },
-      { folder: { title: 'Folder 3' } },
-      { folder: { title: 'Folder 4' } },
-      { folder: { title: 'Folder 5' } }
+  data() {
+    return {
+      folders: [
+      { title: 'Folder 1' },
+      { title: 'Folder 2' },
+      { title: 'Folder 3' },
+      { title: 'Folder 4' },
+      { title: 'Folder 5' },
+      { title: 'Folder wesh' },
+      { title: 'Folder lawl' }
     ],
     lien: 3
+    }
   }
 }
 </script>

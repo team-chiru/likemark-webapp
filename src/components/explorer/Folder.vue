@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <i class="item-primary">folder</i>
-    <div class="item-content">Folder 1 {{ title }}</div>
+    <div class="item-content">{{ title }}</div>
   </div>
 </template>
 
@@ -16,11 +16,17 @@ export default{
     child: {
       'folder': Folder,
       'lien': Link
-    },
-    data: {
-      title: 'Folder 1'
     }
-  }
+  },
+
+  data() {
+    return {
+    }
+  },
+
+  props: [
+    'title'
+  ]
 }
 </script>
 
